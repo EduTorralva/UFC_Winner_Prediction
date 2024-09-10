@@ -2,6 +2,7 @@
 ###################
 
 import pandas as pd
+import numpy as np
 import xgboost as xgb
 import pickle
 import matplotlib.pyplot as plt
