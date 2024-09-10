@@ -24,7 +24,7 @@ pd.set_option("display.max_columns", None, "display.max_rows", None)
 
 # make_dataset: Script de Preparación de Datos
 def read_file_csv(filename):
-    ufc_master_ds = pd.read_csv(os.path.join('../data/raw/', filename)).set_index('Winner')
+    ufc_master_ds = pd.read_csv(os.path.join('../data/draw/', filename)).set_index('Winner')
     print(filename, ' cargado correctamente')
     return ufc_master_ds
 def data_preparation(ufc_master_ds):
