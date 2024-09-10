@@ -123,3 +123,6 @@ def main():
     tdf1 = data_preparation(df1)
     data_exporting(tdf1,'ufc-master.csv')
 
+if __name__ == "__main__":
+    main()
+
