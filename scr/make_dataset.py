@@ -115,3 +115,11 @@ def data_exporting(ufc_master_ds,filename):
     ufc_master_ds.to_csv(os.path.join('../data/processed/', filename))
     print(filename, 'exportado correctamente en la carpeta processed')
 
+
+
+def main():
+    # Matriz de Entrenamiento
+    df1 = read_file_csv('ufc-master_final.csv')
+    tdf1 = data_preparation(df1)
+    data_exporting(tdf1,'ufc-master.csv')
+
