@@ -43,7 +43,7 @@ def eval_model(filename):
 
 # Validación desde el inicio
 def main():
-    df = eval_model('ufc-master_final.csv')
+    df = eval_model('ufc-master.csv')
     print('Finalizó la validación del Modelo')
 
 
