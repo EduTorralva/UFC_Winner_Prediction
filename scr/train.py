@@ -32,3 +32,12 @@ def read_file_csv(filename):
     package = '../models/best_model.pkl'
     pickle.dump(RF_model_1, open(package, 'wb'))
     print('Modelo exportado correctamente en la carpeta models')
+
+# Entrenamiento completo
+def main():
+    read_file_csv('ufc-master_final.csv')
+    print('Finalizó el entrenamiento del Modelo')
+
+
+if __name__ == "__main__":
+    main()
