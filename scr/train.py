@@ -1,9 +1,12 @@
 # Código de Entrenamiento
 #########################
 # Importación de librerías necesarias
-import numpy as np
 import pandas as pd
+import numpy as np
+import xgboost as xgb
+import pickle
 import matplotlib.pyplot as plt
+from sklearn.metrics import *
 import seaborn as sns
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -12,7 +15,6 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score
 from sklearn.dummy import DummyClassifier
 import sys, warnings, os
-import pickle
 
 # Cargar la tabla transformada
 def read_file_csv(filename):
