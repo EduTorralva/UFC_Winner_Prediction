@@ -35,7 +35,7 @@ def read_file_csv(filename):
 
 # Entrenamiento completo
 def main():
-    read_file_csv('ufc-master_final.csv')
+    read_file_csv('ufc-master.csv')
     print('Finalizó el entrenamiento del Modelo')
 
 
